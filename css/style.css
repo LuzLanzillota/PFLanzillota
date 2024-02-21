@@ -57,10 +57,11 @@ nav img {
 }
 
 /* Home */
-.imagen-fondo{
+.imagen-fondo {
     height: 500px;
     overflow: hidden;
 }
+
 .productos-mas-pedidos {
     display: flex;
     flex-direction: row;
@@ -70,9 +71,11 @@ nav img {
 
 
 }
-.productos-mas-pedidos article{
+
+.productos-mas-pedidos article {
     margin: 10px;
 }
+
 .productos-mas-pedidos article img {
     height: 250px;
 }
@@ -96,17 +99,28 @@ nav img {
     flex-direction: column;
 } */
 .tienda section {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
+
 .tienda section article {
     margin: 5px;
     padding: 0.6rem;
-    
+
 }
+
 .tienda section img {
     width: 100%;
+}
+
+.cards {
+    flex-grow: 1;
+}
+
+.pie {
+    background-color: #D1C4B7;
 }
 
 .boton {
@@ -153,22 +167,88 @@ strong {
     display: flex;
     justify-content: center;
 }
+
 /* Contacto */
-h3{background-color: #D1C4B7;}
-.locales h2{
+h3 {
+    background-color: #D1C4B7;
+}
+
+.tit-locales{
     text-align: center;
     text-decoration: overline #AD172B;
-    padding: 20px;
+    margin-top: 20px;
 }
+
+.locales {
+    display: flex;
+    justify-content: center;
+}
+
+.locales article {
+
+    margin: 10px;
+    padding: 5px;
+}
+
+.locales .localesc img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.seccion1-index {
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0fr 1fr 1fr 0fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . . ."
+        ". card1 . card2 ."
+        ". card3 . card4 ."
+        ". . . . .";
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+.boton1{
+    display: flex;
+    justify-content: center;
+}
+.boton1 button{
+    background-color: #D1C4B7;
+    color: #373737;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: none;
+}
+
 /* Servicios */
-.servicio{
+.servicio {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.servicio article{
+
+.servicio article {
     margin: 20px;
 }
-.servicio img{
+
+.servicio img {
     height: 450px;
 }
