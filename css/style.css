@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+h1 {
+    text-align: center;
+    text-decoration: overline #AD172B;
+    padding: 20px;
+}
+
+/* Navegador */
+
+nav {
+    background-color: #AD172B;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 20px;
+    height: 90px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    font-family: Cabin, Arial, Helvetica, sans-serif;
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px 0 0;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+nav ul li a:hover {
+    text-decoration: 2px solid underline white;
+}
+
+nav img {
+    height: 100px;
+}
+
+/* Home */
+.imagen-fondo{
+    height: 500px;
+    overflow: hidden;
+}
+.productos-mas-pedidos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+.productos-mas-pedidos article{
+    margin: 10px;
+}
+.productos-mas-pedidos article img {
+    height: 250px;
+}
+
+.productos-mas-pedidos p {
+    text-align: center;
+
+}
+
+.clientes h2 {
+    margin: 40px;
+    text-align: center;
+    text-decoration: overline #AD172B;
+    font-size: x-large;
+}
+
+/* Tienda */
+/* .tienda section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+.tienda section{
+align-items: center;
+}
+.tienda section img {
+    height: 200px;
+    margin: 30px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+.boton button {
+    background-color: #AD172B;
+    color: white;
+    width: 600px;
+    height: 40px;
+    margin: 50px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #373737;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer p {
+    background-color: #AD172B;
+    color: white;
+    text-align: center;
+}
+
+/* Strong */
+strong {
+    color: #AD172B;
+}
+
+.nosotros section p {
+    margin: 30px;
+}
+
+/* Mapa */
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+/* Contacto */
+h3{background-color: #D1C4B7;}
+.locales h2{
+    text-align: center;
+    text-decoration: overline #AD172B;
+    padding: 20px;
+}
+/* Servicios */
+.servicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.servicio article{
+    margin: 20px;
+}
+.servicio img{
+    height: 450px;
+}
