@@ -95,12 +95,18 @@ nav img {
     justify-content: center;
     flex-direction: column;
 } */
-.tienda section{
-align-items: center;
+.tienda section {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.tienda section article {
+    margin: 5px;
+    padding: 0.6rem;
+    
 }
 .tienda section img {
-    height: 200px;
-    margin: 30px;
+    width: 100%;
 }
 
 .boton {
@@ -115,6 +121,7 @@ align-items: center;
     height: 40px;
     margin: 50px;
     border: none;
+    border-radius: 20px;
 }
 
 /* Footer */
