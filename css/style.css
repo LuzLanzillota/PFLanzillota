@@ -227,6 +227,7 @@ h3 {
 .boton1{
     display: flex;
     justify-content: center;
+    font-size: 20px;
 }
 .boton1 button{
     background-color: #D1C4B7;
@@ -236,6 +237,29 @@ h3 {
     margin: auto;
     margin-bottom: 10px;
     border: none;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    
+}
+.formulario form{
+    width: 800px;
+    box-shadow: #373737 3px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.formulario form #exampleInputMessage1{
+    height: 200px;
+}
+.formulario form .botonc{
+    background-color: #AD172B;
+    width: 70px;
+    color: white;
+}
+.formulario form .botonc button{
+    color: white;
 }
 
 /* Servicios */
