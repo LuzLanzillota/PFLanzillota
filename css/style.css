@@ -355,6 +355,26 @@ strong {
     margin: 20px;
 }
 
+.servicio article p{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 110%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.3);
+    transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18);
+}
+.servicio article .box{
+left: 20%;
+}
+.servicio article .cate{
+    left: 82%;
+}
+.servicio article .menu{
+    left: 55%;
+    }
+    
 .servicio img {
     height: 450px;
+    
 }
