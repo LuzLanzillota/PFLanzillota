@@ -50,6 +50,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: 2px solid underline white;
+    
 }
 
 nav img {
@@ -220,7 +221,15 @@ footer p {
     text-align: center;
     margin: auto;
 }
-
+.redes{
+    display: inline-flex;
+    float: inline-end;
+    margin-right: 20px;
+}
+.redes img{
+    height: 30px;
+    margin: 10px;
+}
 /* Strong */
 strong {
     color: #AD172B;
