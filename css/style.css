@@ -368,7 +368,7 @@ strong {
 
 .div-servicio {
     display: grid;
-    width: 100%;
+    margin: auto;
     grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -452,6 +452,12 @@ strong {
 
     .redes {
         display: block;
+    }
+    .footer{
+        width: 100%;
+    }
+    .div-servicio{
+        margin: auto;
     }
 }
 
