@@ -488,16 +488,12 @@ strong {
         width: 100%;
         justify-items: center;
     }
-    .div-servicio {
-        display: block;
-        margin: auto;
-    }
 
 }
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 730px) {
     .beneficios {
         display: grid;
     }
