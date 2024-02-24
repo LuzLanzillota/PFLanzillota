@@ -488,7 +488,10 @@ strong {
         width: 100%;
         justify-items: center;
     }
-    
+    .div-servicio {
+        display: block;
+        margin: auto;
+    }
 
 }
 
