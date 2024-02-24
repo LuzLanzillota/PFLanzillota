@@ -9,13 +9,11 @@
     border: none !important;
     background-color: white !important;
     box-shadow: none !important;
-
 }
 #navbarSupportedContent{
     background-color: #AD172B;
     text-align: center;
     color: white;
-    
 
 }
 
@@ -81,7 +79,7 @@ nav img {
 
 /* Home */
 .imagen-fondo {
-    height: 350px;
+    height: 220px;
     overflow: hidden;
 }
 
@@ -213,6 +211,7 @@ nav img {
 .boton {
     display: flex;
     justify-content: center;
+    
 }
 
 .boton button {
@@ -222,7 +221,10 @@ nav img {
     height: 40px;
     margin: 50px;
     border: none;
-
+}
+.boton button a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Footer */
