@@ -488,6 +488,7 @@ strong {
         width: 100%;
         justify-items: center;
     }
+    
 
 }
 
@@ -514,6 +515,10 @@ strong {
             "card2"
             "card3"
             "card4";
+    }
+    .div-servicio {
+        display: block;
+        margin: auto;
     }
 }
 
