@@ -79,7 +79,7 @@ nav img {
 
 /* Home */
 .imagen-fondo {
-    height: 450px;
+    height: 350px;
     overflow: hidden;
     width: 100%;
 }
@@ -187,7 +187,6 @@ nav img {
 
 
 /* Tienda */
-
 .tienda section {
     display: flex;
     justify-content: center;
@@ -435,7 +434,7 @@ strong {
 .imagen-fondo-servicio img {
     overflow: hidden;
     width: 100%;
-    height: 450px;
+    height: 350px;
 
 }
 
@@ -531,6 +530,9 @@ strong {
         display: block;
         margin: auto;
     }
+    .tienda{
+        margin-top: -100px;
+    }
 }
 
 
@@ -576,5 +578,8 @@ strong {
             "card2"
             "card3"
             "card4";
+    }
+    .tienda{
+        margin-top: -100px;
     }
 }
