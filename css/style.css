@@ -81,6 +81,7 @@ nav img {
 .imagen-fondo {
     height: 450px;
     overflow: hidden;
+    width: 100%;
 }
 
 .imagen-fondo img {
