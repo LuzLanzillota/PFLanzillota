@@ -5,6 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+.navbar-toggler{
+    border: none !important;
+    background-color: white !important;
+    box-shadow: none !important;
+
+}
+#navbarSupportedContent{
+    background-color: #AD172B;
+    text-align: center;
+    color: white;
+    
+
+}
 
 body {
     font-family: "Montserrat";
@@ -191,10 +204,6 @@ nav img {
 
 .tienda section img {
     width: 100%;
-}
-
-.cards {
-    flex-grow: 1;
 }
 
 .pie {
