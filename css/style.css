@@ -5,12 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none !important;
     background-color: white !important;
     box-shadow: none !important;
 }
-#navbarSupportedContent{
+
+#navbarSupportedContent {
     background-color: #AD172B;
     text-align: center;
     color: white;
@@ -79,7 +81,7 @@ nav img {
 
 /* Home */
 .imagen-fondo {
-    height: 350px;
+    height: 500px;
     overflow: hidden;
     width: 100%;
 }
@@ -211,7 +213,7 @@ nav img {
 .boton {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .boton button {
@@ -222,6 +224,7 @@ nav img {
     margin: 50px;
     border: none;
 }
+
 .boton button a {
     text-decoration: none;
     color: white;
@@ -329,14 +332,17 @@ strong {
     justify-content: center;
     font-size: 20px;
 }
-.boton1 button a{
+
+.boton1 button a {
     text-decoration: none;
     color: #373737;
 }
-.boton1 button:hover{
+
+.boton1 button:hover {
     border: 2px solid #D1C4B7;
-    background-color:white;
+    background-color: white;
 }
+
 .boton1 button {
     background-color: #D1C4B7;
     color: #373737;
@@ -434,7 +440,7 @@ strong {
 .imagen-fondo-servicio img {
     overflow: hidden;
     width: 100%;
-    height: 350px;
+    height: 500px;
 
 }
 
@@ -464,10 +470,12 @@ strong {
     .redes {
         display: block;
     }
-    .footer{
+
+    .footer {
         width: 100%;
     }
-    .div-servicio{
+
+    .div-servicio {
         margin: auto;
     }
 }
@@ -526,11 +534,13 @@ strong {
             "card3"
             "card4";
     }
+
     .div-servicio {
         display: block;
         margin: auto;
     }
-    .tienda{
+
+    .tienda {
         margin-top: -100px;
     }
 }
@@ -579,7 +589,8 @@ strong {
             "card3"
             "card4";
     }
-    .tienda{
+
+    .tienda {
         margin-top: -100px;
     }
 }
