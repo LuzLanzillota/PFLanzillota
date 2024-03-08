@@ -1,0 +1,42 @@
+//Reseteo
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+    h1 {
+        text-align: center;
+        text-decoration: overline #ad172b;
+        padding: 20px;
+    }
+}
+
+
+@media (min-width: 731px) {
+    body{
+        h1 {
+        text-decoration: underline #ad172b;
+    }
+    }
+}
+
+@media (max-width: 730px) {
+    body{
+    h1 {
+        text-decoration: underline #ad172b;
+    }  
+    }
+    
+}
+
+@media (max-width: 400px) {
+    body{
+        h1 {
+        font-size:x-large;
+        margin: auto;
+    }    
+    }
+}

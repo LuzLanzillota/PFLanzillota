@@ -1,596 +1,504 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.navbar-toggler {
-    border: none !important;
-    background-color: white !important;
-    box-shadow: none !important;
-}
-
-#navbarSupportedContent {
-    background-color: #AD172B;
-    text-align: center;
-    color: white;
-
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    font-family: "Montserrat";
-}
-
-h1 {
+  font-family: "Montserrat"; }
+  body h1 {
     text-align: center;
-    text-decoration: overline #AD172B;
-    padding: 20px;
-}
+    text-decoration: overline #ad172b;
+    padding: 20px; }
+
+@media (min-width: 731px) {
+  body h1 {
+    text-decoration: underline #ad172b; } }
+
+@media (max-width: 730px) {
+  body h1 {
+    text-decoration: underline #ad172b; } }
+
+@media (max-width: 400px) {
+  body h1 {
+    font-size: x-large;
+    margin: auto; } }
 
 /* Navegador */
 .ancho-maximo {
-    max-width: auto;
-    margin: auto;
-}
-
-nav {
-    background-color: #AD172B;
+  max-width: auto;
+  margin: auto; }
+  .ancho-maximo .header nav {
+    background-color: #ad172b;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding: 0 20px;
-    height: 90px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    font-family: Cabin, Arial, Helvetica, sans-serif;
-    list-style: none;
-    padding: 10px;
-    margin: 0 10px 0 0;
-
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: large;
-}
-
-nav ul li a:hover {
-    text-decoration: 2px solid underline white;
-
-}
-
-nav img {
     height: 100px;
-}
+    flex-wrap: wrap;
+    align-items: center; }
+    .ancho-maximo .header nav .navbar-toggler {
+      border: none !important;
+      background-color: white !important;
+      box-shadow: none !important; }
+    .ancho-maximo .header nav #navbarSupportedContent {
+      background-color: #ad172b;
+      text-align: center;
+      color: white; }
+    .ancho-maximo .header nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap; }
+      .ancho-maximo .header nav ul li {
+        font-family: Cabin, Arial, Helvetica, sans-serif;
+        list-style: none;
+        padding: 10px;
+        margin: 0 10px 0 0; }
+        .ancho-maximo .header nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: large; }
+          .ancho-maximo .header nav ul li a:hover {
+            text-decoration: 2px solid underline white; }
+  .ancho-maximo .header img {
+    height: 100px; }
+  .ancho-maximo .header .button-hamburgesa button {
+    color: white; }
 
-.button-hamburgesa button {
-    color: white;
-}
+@media (min-width: 731px) {
+  .ancho-maximo .header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; } }
+
+@media (max-width: 400px) {
+  .header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; } }
 
 /* Home */
-.imagen-fondo {
-    height: 500px;
-    overflow: hidden;
-    width: 100%;
-}
+main .slider1 {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . ." ". slider ."; }
+  main .slider1 .slider {
+    grid-area: slider; }
+  main .slider1 .carrusel {
+    width: 100%; }
+
+main .clientes2 h2 {
+  margin: 40px;
+  text-align: center;
+  text-decoration: overline #ad172b; }
+
+main .clientes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  margin-left: 10px; }
+  main .clientes article {
+    margin: 10px; }
+
+main section .beneficios {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr 0.2fr 1fr;
+  gap: 0px 0px;
+  justify-items: center;
+  grid-auto-flow: row;
+  grid-template-areas: ". ben1 . ben2 ." ". . . . ." ". ben3 . ben4 ."; }
+  main section .beneficios img {
+    width: 60px;
+    margin: 15px; }
+  main section .beneficios .ben1 {
+    grid-area: ben1;
+    align-content: center; }
+    main section .beneficios .ben1 img {
+      width: 60px; }
+  main section .beneficios .ben2 {
+    grid-area: ben2; }
+  main section .beneficios .ben3 {
+    grid-area: ben3; }
+    main section .beneficios .ben3 img {
+      width: 60px; }
+  main section .beneficios .ben4 {
+    grid-area: ben4; }
+    main section .beneficios .ben4 img {
+      width: 60px; }
+
+main .galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  main .galeria img {
+    margin: 5px; }
 
 .imagen-fondo img {
-    width: 100%;
-}
+  height: 450px;
+  overflow: hidden;
+  width: 100%; }
 
-.slider1 {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". . ."
-        ". slider .";
-}
-
-.slider {
-    grid-area: slider;
-}
-
-.carrusel {
-    width: 100%;
-}
-
-
-.clientes2 h2 {
-    margin: 40px;
-    text-align: center;
-    text-decoration: overline #AD172B;
-}
-
-.clientes {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px;
-    margin-left: 10px;
-
-}
-
-.clientes article {
-    margin: 10px;
-}
-
-.beneficios {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
-    grid-template-rows: 1fr 0.2fr 1fr;
-    gap: 0px 0px;
-    justify-items: center;
-    grid-auto-flow: row;
-    grid-template-areas:
-        ". ben1 . ben2 ."
-        ". . . . ."
-        ". ben3 . ben4 .";
-}
-
-.beneficios img {
-    width: 60px;
-    margin: 15px;
-}
-
-.beneficios .ben1 img {
-    width: 60px;
-}
-
-.beneficios .ben3 img {
-    width: 60px;
-}
-
-.beneficios .ben4 img {
-    width: 60px;
-}
-
-.ben1 {
-    grid-area: ben1;
-    align-content: center;
-}
-
-.ben2 {
-    grid-area: ben2;
-}
-
-.ben3 {
-    grid-area: ben3;
-}
-
-.ben4 {
-    grid-area: ben4;
-}
-
-.galeria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center
-}
-
-.galeria img {
-    margin: 5px;
-}
-
-
-/* Tienda */
-.tienda section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-.tienda section article {
-    margin: 5px;
-    padding: 0.6rem;
-
-}
-
-.tienda section img {
-    width: 100%;
-}
-
-.pie {
-    background-color: #D1C4B7;
-}
-
-.boton {
-    display: flex;
-    justify-content: center;
-
-}
-
-.boton button {
-    background-color: #AD172B;
-    color: white;
-    width: 600px;
-    height: 40px;
-    margin: 50px;
-    border: none;
-}
-
-.boton button a {
-    text-decoration: none;
-    color: white;
-}
-
-/* Footer */
-footer {
-    background-color: #373737;
-}
-
-footer img {
-    height: 50px;
-}
-
-footer p {
-    background-color: #AD172B;
-    color: white;
-    text-align: center;
+@media (max-width: 1200px) {
+  .ancho-maximo.header {
+    max-width: 1250px;
     margin: auto;
-}
+    align-items: center; }
+  .beneficios {
+    display: grid; }
+  .clientes {
+    flex-wrap: wrap;
+    align-items: center; }
+  .footer {
+    display: inline-block;
+    width: 100%; }
+  .redes {
+    display: block; }
+  .footer {
+    width: 100%; }
+  .div-servicio {
+    margin: auto; } }
 
-.redes {
-    display: inline-flex;
-    float: inline-end;
-    margin-right: 20px;
-}
-
-.redes img {
-    height: 30px;
-    margin: 10px;
-}
-
-/* Strong */
-strong {
-    color: #AD172B;
-}
-
-.nosotros section p {
-    margin: 30px;
-}
-
-/* Mapa */
-.mapa {
+@media (min-width: 731px) {
+  .ancho-maximo.header nav {
     display: flex;
-    justify-content: center;
-}
+    align-items: center;
+    justify-content: space-between; }
+  .grid-contacto {
+    display: block; }
+  .beneficios {
+    display: grid;
+    align-items: center; }
+  h1 {
+    text-decoration: underline #ad172b; }
+  .grid-contacto {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    justify-items: center; } }
+
+@media (max-width: 730px) {
+  main section .beneficios {
+    display: grid;
+    margin: 0 10px; } }
+
+@media (max-width: 400px) {
+  main .clientes {
+    margin: auto; }
+  main section .beneficios {
+    display: inline-block;
+    align-items: center; } }
 
 /* Contacto */
-
-
-.tit-locales {
+main {
+  /* Mapa */ }
+  main .tit-locales {
     text-align: center;
-    text-decoration: overline #AD172B;
-    margin-top: 20px;
-}
-
-.locales {
+    text-decoration: overline #ad172b;
+    margin-top: 20px; }
+  main .locales {
     display: flex;
-    justify-content: center;
-}
-
-.locales article {
-
-    margin: 10px;
-    padding: 5px;
-}
-
-.locales .localesc img {
-    width: 100%;
-    overflow: hidden;
-}
-
-.grid-contacto {
+    justify-content: center; }
+    main .locales article {
+      margin: 10px;
+      padding: 5px; }
+    main .locales .localesc img {
+      width: 100%;
+      overflow: hidden; }
+  main .mapa {
+    display: flex;
+    justify-content: center; }
+  main .grid-contacto {
     display: grid;
     align-items: start;
     justify-content: center;
     grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
     grid-template-rows: 0fr 1fr 1fr 0fr;
     gap: 0px 0px;
-    grid-template-areas:
-        ". . . . ."
-        ". card1 . card2 ."
-        ". card3 . card4 ."
-        ". . . . .";
-}
-
-.card1 {
-    grid-area: card1;
-}
-
-.card2 {
-    grid-area: card2;
-}
-
-.card3 {
-    grid-area: card3;
-}
-
-.card4 {
-    grid-area: card4;
-}
-
-.boton1 {
+    grid-template-areas: ". . . . ." ". card1 . card2 ." ". card3 . card4 ." ". . . . ."; }
+    main .grid-contacto .card1 {
+      grid-area: card1; }
+    main .grid-contacto .card2 {
+      grid-area: card2; }
+    main .grid-contacto .card3 {
+      grid-area: card3; }
+    main .grid-contacto .card4 {
+      grid-area: card4; }
+  main .boton1 {
     display: flex;
     justify-content: center;
-    font-size: 20px;
-}
-
-.boton1 button a {
-    text-decoration: none;
-    color: #373737;
-}
-
-.boton1 button:hover {
-    border: 2px solid #D1C4B7;
-    background-color: white;
-}
-
-.boton1 button {
-    background-color: #D1C4B7;
-    color: #373737;
-    width: 200px;
-    height: 50px;
-    margin: auto;
-    margin-bottom: 10px;
-    border: none;
-}
-
-.formulario {
+    font-size: 20px; }
+    main .boton1 button {
+      background-color: #d1c4b7;
+      color: #373737;
+      width: 200px;
+      height: 50px;
+      margin: auto;
+      margin-bottom: 10px;
+      border: none; }
+      main .boton1 button a {
+        text-decoration: none;
+        color: #373737; }
+        main .boton1 button a:hover {
+          border: 2px solid #d1c4b7;
+          background-color: white; }
+  main .formulario {
     display: flex;
-    justify-content: center;
+    justify-content: center; }
+    main .formulario form {
+      width: 800px;
+      box-shadow: #373737 3px;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px; }
+      main .formulario form #exampleInputMessage1 {
+        height: 200px; }
+      main .formulario form .botonc {
+        background-color: #ad172b;
+        width: 70px;
+        color: white; }
+        main .formulario form .botonc button {
+          color: white; }
 
-}
-
-.formulario form {
-    width: 800px;
-    box-shadow: #373737 3px;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.formulario form #exampleInputMessage1 {
-    height: 200px;
-}
-
-.formulario form .botonc {
-    background-color: #AD172B;
-    width: 70px;
-    color: white;
-}
-
-.formulario form .botonc button {
-    color: white;
-}
-
-/* Servicios */
-
-.div-servicio {
+@media (min-width: 731px) {
+  main .grid-contacto {
     display: grid;
     margin: auto;
-    grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    margin: 0 10px;
-    grid-template-areas:
-        ". article-servicio-1 . article-servicio-2 . article-servicio-3 .";
-}
+    width: 100%;
+    justify-items: center; } }
 
-.article-servicio-1 {
+@media (max-width: 730px) {
+  main .grid-contacto {
+    display: grid;
+    margin: auto;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 550px);
+    grid-template-areas: "card1" "card2" "card3" "card4"; } }
+
+@media (max-width: 400px) {
+  main .grid-contacto {
+    display: grid;
+    margin: 20px auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 550px);
+    grid-template-areas: "card1" "card2" "card3" "card4"; } }
+
+/* Tienda */
+.imagen-fondo img {
+  height: 450px;
+  overflow: hidden;
+  width: 100%; }
+
+.tienda img {
+  width: 100%; }
+
+.tienda section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .tienda section article {
+    margin: 5px;
+    padding: 0.6rem; }
+  .tienda section img {
+    width: 100%; }
+
+.tienda .pie {
+  background-color: #d1c4b7; }
+
+.tienda section .boton {
+  display: flex;
+  justify-content: center; }
+  .tienda section .boton button {
+    background-color: #ad172b;
+    color: white;
+    width: 600px;
+    height: 40px;
+    margin: 50px;
+    border: none; }
+    .tienda section .boton button a {
+      text-decoration: none;
+      color: white; }
+
+/* Servicios */
+main .imagen-fondo img {
+  height: 450px;
+  overflow: hidden;
+  width: 100%; }
+
+main .div-servicio {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  margin: 0 10px;
+  grid-template-areas: ". article-servicio-1 . article-servicio-2 . article-servicio-3 ."; }
+  main .div-servicio .article-servicio-1 {
     grid-area: article-servicio-1;
     background-image: url(../recursos/box.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 10px;
-
-}
-
-.article-servicio-2 {
+    height: 450px; }
+  main .div-servicio article {
+    height: 450px;
+    display: flex;
+    justify-content: center; }
+  main .div-servicio .article-servicio-2 {
     grid-area: article-servicio-2;
     background-image: url(../recursos/catering.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    margin-bottom: 10px;
-}
-
-.article-servicio-3 {
+    margin-bottom: 10px; }
+  main .div-servicio .article-servicio-3 {
     grid-area: article-servicio-3;
     background-image: url(https://ayulem.com.ar/wp-content/uploads/2023/12/Ayulem_Destacado_MenuEjecutivo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    margin-bottom: 10px;
-}
-
-.div-servicio article {
-    height: 450px;
-    display: flex;
-    justify-content: center;
-}
-
-.div-servicio p {
+    margin-bottom: 10px; }
+  main .div-servicio p {
     color: white;
     font-size: 2rem;
     text-align: center;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18);
-}
+    transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18); }
 
-.imagen-fondo-servicio img {
-    overflow: hidden;
-    width: 100%;
-    height: 500px;
+.nosotros section p {
+  margin: 0 20px; }
 
-}
+.imagen-fondo img {
+  height: 450px;
+  overflow: hidden;
+  width: 100%; }
 
-/* Responsive */
+/* Strong */
+strong {
+  color: #ad172b; }
+
+/* Footer */
+footer {
+  background-color: #373737; }
+  footer img {
+    height: 50px; }
+  footer p {
+    background-color: #ad172b;
+    color: white;
+    text-align: center;
+    margin: auto; }
+  footer .redes {
+    display: inline-flex;
+    float: inline-end;
+    margin-right: 20px; }
+    footer .redes img {
+      height: 30px;
+      margin: 10px; }
 
 @media (max-width: 1200px) {
-    .ancho-maximo.header {
-        max-width: 1250px;
-        margin: auto;
-        align-items: center;
-    }
-
-    .beneficios {
-        display: grid;
-    }
-
-    .clientes {
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .footer {
-        display: inline-block;
-        width: 100%;
-    }
-
-    .redes {
-        display: block;
-    }
-
-    .footer {
-        width: 100%;
-    }
-
-    .div-servicio {
-        margin: auto;
-    }
-}
-
-
-@media (min-width: 731px) {
-    .ancho-maximo.header nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .grid-contacto {
-        display: block;
-    }
-
-    .beneficios {
-        display: grid;
-        align-items: center;
-    }
-
-    h1 {
-        text-decoration: underline #AD172B;
-    }
-
-    .grid-contacto {
-        display: grid;
-        margin: auto;
-        width: 100%;
-        justify-items: center;
-    }
-
-}
-
-
-
-@media (max-width: 730px) {
-    .beneficios {
-        display: grid;
-    }
-
-    h1 {
-        text-decoration: underline #AD172B;
-    }
-
-    .grid-contacto {
-        display: grid;
-        margin: auto;
-        justify-items: center;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 550px);
-        grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "card4";
-    }
-
-    .div-servicio {
-        display: block;
-        margin: auto;
-    }
-
-    .tienda {
-        margin-top: -100px;
-    }
-}
-
-
+  .footer {
+    display: inline-block;
+    width: 100%;
+    width: 100%; }
+    .footer .redes {
+      display: block; } }
 
 @media (max-width: 400px) {
-    .header nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  footer {
+    width: 100%; } }
 
-    h1 {
-        font-size: medium;
-        margin: auto;
-    }
+/* Responsive */
+@media (max-width: 1200px) {
+  .ancho-maximo.header {
+    max-width: 1250px;
+    margin: auto;
+    align-items: center; }
+  .beneficios {
+    display: grid; }
+  .clientes {
+    flex-wrap: wrap;
+    align-items: center; }
+  .footer {
+    display: inline-block;
+    width: 100%; }
+  .redes {
+    display: block; }
+  .footer {
+    width: 100%; }
+  .div-servicio {
+    margin: auto; } }
 
-    footer {
-        width: 100%;
-    }
+@media (min-width: 731px) {
+  .ancho-maximo.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .grid-contacto {
+    display: block; }
+  .beneficios {
+    display: grid;
+    align-items: center; }
+  h1 {
+    text-decoration: underline #ad172b; }
+  .grid-contacto {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    justify-items: center; } }
 
-    .div-servicio {
-        display: block;
-        margin: auto;
-    }
+@media (max-width: 730px) {
+  .beneficios {
+    display: grid; }
+  h1 {
+    text-decoration: underline #ad172b; }
+  .grid-contacto {
+    display: grid;
+    margin: auto;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 550px);
+    grid-template-areas: "card1" "card2" "card3" "card4"; }
+  .div-servicio {
+    display: block;
+    margin: auto; }
+  .tienda {
+    margin-top: -100px; } }
 
-    .clientes {
-        margin: auto;
-    }
-
-    .beneficios {
-        display: inline;
-        align-items: center;
-    }
-
-    .grid-contacto {
-        display: grid;
-        margin: 20px auto;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 550px);
-        grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "card4";
-    }
-
-    .tienda {
-        margin-top: -100px;
-    }
-}
+@media (max-width: 400px) {
+  .header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  h1 {
+    font-size: medium;
+    margin: auto; }
+  footer {
+    width: 100%; }
+  .div-servicio {
+    display: block;
+    margin: auto; }
+  .clientes {
+    margin: auto; }
+  main section .beneficios {
+    display: inline-block;
+    align-items: center; }
+  .grid-contacto {
+    display: grid;
+    margin: 20px auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 550px);
+    grid-template-areas: "card1" "card2" "card3" "card4"; }
+  .tienda {
+    margin-top: -100px; } }

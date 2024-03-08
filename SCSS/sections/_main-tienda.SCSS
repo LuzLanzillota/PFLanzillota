@@ -1,0 +1,54 @@
+/* Tienda */
+
+.imagen-fondo {
+    img {
+        height: 450px;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+.tienda {
+    img {
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        article {
+            margin: 5px;
+            padding: 0.6rem;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .pie {
+        background-color: #d1c4b7;
+    }
+
+    section{
+        .boton {
+            display: flex;
+            justify-content: center;
+            button {
+                background-color: #ad172b;
+                color: white;
+                width: 600px;
+                height: 40px;
+                margin: 50px;
+                border: none;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+        }
+        }
+    }
+}
+
