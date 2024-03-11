@@ -24,6 +24,40 @@ body {
     font-size: x-large;
     margin: auto; } }
 
+/* Strong */
+strong {
+  color: #ad172b; }
+
+/* Footer */
+footer {
+  background-color: #373737; }
+  footer img {
+    height: 50px; }
+  footer p {
+    background-color: #ad172b;
+    color: white;
+    text-align: center;
+    margin: auto; }
+  footer .redes {
+    display: inline-flex;
+    float: inline-end;
+    margin-right: 20px; }
+    footer .redes img {
+      height: 30px;
+      margin: 10px; }
+
+@media (max-width: 1200px) {
+  .footer {
+    display: inline-block;
+    width: 100%;
+    width: 100%; }
+    .footer .redes {
+      display: block; } }
+
+@media (max-width: 400px) {
+  footer {
+    width: 100%; } }
+
 .ancho-maximo {
   max-width: auto;
   margin: auto; }
@@ -98,7 +132,7 @@ body {
   .main-index .slider1 .slider {
     grid-area: slider; }
 
-.main-index .carrusel {
+.main-index .carousel {
   width: 100%; }
 
 .main-index .clientes {
@@ -205,71 +239,53 @@ body {
   .main-tienda {
     margin-top: -100px; } }
 
-@media (max-width: 400px) {
-  .main-tienda {
-    margin-top: -100px; } }
-
 /* Servicios */
-.main-servicio .div-servicio {
+main .imagen-fondo img {
+  height: 450px;
+  overflow: hidden;
+  width: 100%; }
+
+main .div-servicio {
   display: grid;
-  margin: 10px auto;
+  margin: auto;
   grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   margin: 0 10px;
   grid-template-areas: ". article-servicio-1 . article-servicio-2 . article-servicio-3 ."; }
-  .main-servicio .div-servicio .article-servicio-1 {
+  main .div-servicio .article-servicio-1 {
     grid-area: article-servicio-1;
     background-image: url(../recursos/box.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 10px;
     height: 450px; }
-  .main-servicio .div-servicio .article-servicio-2 {
+  main .div-servicio article {
+    height: 450px;
+    display: flex;
+    justify-content: center; }
+  main .div-servicio .article-servicio-2 {
     grid-area: article-servicio-2;
     background-image: url(../recursos/catering.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
     margin-bottom: 10px; }
-  .main-servicio .div-servicio .article-servicio-3 {
+  main .div-servicio .article-servicio-3 {
     grid-area: article-servicio-3;
     background-image: url(https://ayulem.com.ar/wp-content/uploads/2023/12/Ayulem_Destacado_MenuEjecutivo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
     margin-bottom: 10px; }
-  .main-servicio .div-servicio article {
-    height: 450px;
-    display: flex;
-    justify-content: center; }
-  .main-servicio .div-servicio p {
+  main .div-servicio p {
     color: white;
     font-size: 2rem;
     text-align: center;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.3);
     transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18); }
-
-.imagen-fondo-servicio img {
-  overflow: hidden;
-  width: 100%;
-  height: 500px; }
-
-@media (max-width: 1200px) {
-  .main-servicio .div-servicio {
-    margin: auto; } }
-
-@media (max-width: 730px) {
-  .main-servicio .div-servicio {
-    display: block;
-    margin: auto; } }
-
-@media (max-width: 400px) {
-  .main-servicio .div-servicio {
-    display: inline;
-    margin: auto; } }
 
 .nosotros section p {
   margin: 30px; }
@@ -375,37 +391,3 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 550px);
     grid-template-areas: "card1" "card2" "card3" "card4"; } }
-
-/* Strong */
-strong {
-  color: #ad172b; }
-
-/* Footer */
-footer {
-  background-color: #373737; }
-  footer img {
-    height: 50px; }
-  footer p {
-    background-color: #ad172b;
-    color: white;
-    text-align: center;
-    margin: auto; }
-  footer .redes {
-    display: inline-flex;
-    float: inline-end;
-    margin-right: 20px; }
-    footer .redes img {
-      height: 30px;
-      margin: 10px; }
-
-@media (max-width: 1200px) {
-  .footer {
-    display: inline-block;
-    width: 100%;
-    width: 100%; }
-    .footer .redes {
-      display: block; } }
-
-@media (max-width: 400px) {
-  footer {
-    width: 100%; } }

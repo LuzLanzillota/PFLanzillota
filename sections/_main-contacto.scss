@@ -9,7 +9,7 @@
 
     .tit-locales {
         text-align: center;
-        text-decoration: overline #AD172B;
+        text-decoration: overline $rojo;
         margin-top: 20px;
     }
 
@@ -105,7 +105,7 @@
             }
 
             .botonc {
-                background-color: #AD172B;
+                background-color: $rojo;
                 width: 70px;
                 color: white;
 
