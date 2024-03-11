@@ -8,20 +8,20 @@ body {
   font-family: "Montserrat"; }
   body h1 {
     text-align: center;
-    text-decoration: overline #AD172B;
+    text-decoration: overline #ad172b;
     padding: 20px; }
 
 @media (min-width: 731px) {
-  h1 {
-    text-decoration: underline #AD172B; } }
+  body h1 {
+    text-decoration: underline #ad172b; } }
 
 @media (max-width: 730px) {
-  h1 {
-    text-decoration: underline #AD172B; } }
+  body h1 {
+    text-decoration: underline #ad172b; } }
 
 @media (max-width: 400px) {
-  h1 {
-    font-size: medium;
+  body h1 {
+    font-size: x-large;
     margin: auto; } }
 
 .ancho-maximo {
@@ -82,49 +82,33 @@ body {
     align-items: center;
     justify-content: space-between; } }
 
-.imagen-fondo {
-  height: 500px;
-  overflow: hidden;
-  width: 100%; }
-  .imagen-fondo img {
-    width: 100%; }
-
-.main-index .slider1 {
+/* Home */
+main .slider1 {
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.2fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: ". . ." ". slider ."; }
-  .main-index .slider1 .slider {
+  main .slider1 .slider {
     grid-area: slider; }
+  main .slider1 .carrusel {
+    width: 100%; }
 
-.main-index .carrusel {
-  width: 100%; }
+main .clientes2 h2 {
+  margin: 40px;
+  text-align: center;
+  text-decoration: overline #ad172b; }
 
-.main-index .clientes {
+main .clientes {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 10px;
   margin-left: 10px; }
-  .main-index .clientes article {
+  main .clientes article {
     margin: 10px; }
 
-.main-index .clientes2 h2 {
-  margin: 40px;
-  text-align: center;
-  text-decoration: overline #AD172B; }
-
-.main-index .galeria {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-  .main-index .galeria img {
-    margin: 5px; }
-
-.main-index .beneficios {
+main section .beneficios {
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
   grid-template-rows: 1fr 0.2fr 1fr;
@@ -132,46 +116,87 @@ body {
   justify-items: center;
   grid-auto-flow: row;
   grid-template-areas: ". ben1 . ben2 ." ". . . . ." ". ben3 . ben4 ."; }
-  .main-index .beneficios img {
+  main section .beneficios img {
     width: 60px;
     margin: 15px; }
-  .main-index .beneficios .ben1 {
+  main section .beneficios .ben1 {
     grid-area: ben1;
     align-content: center; }
-    .main-index .beneficios .ben1 img {
+    main section .beneficios .ben1 img {
       width: 60px; }
-  .main-index .beneficios .ben2 {
+  main section .beneficios .ben2 {
     grid-area: ben2; }
-  .main-index .beneficios .ben3 {
+  main section .beneficios .ben3 {
     grid-area: ben3; }
-    .main-index .beneficios .ben3 img {
+    main section .beneficios .ben3 img {
       width: 60px; }
-  .main-index .beneficios .ben4 {
+  main section .beneficios .ben4 {
     grid-area: ben4; }
-    .main-index .beneficios .ben4 img {
+    main section .beneficios .ben4 img {
       width: 60px; }
 
+main .galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  main .galeria img {
+    margin: 5px; }
+
+.imagen-fondo img {
+  height: 450px;
+  overflow: hidden;
+  width: 100%; }
+
 @media (max-width: 1200px) {
+  .ancho-maximo.header {
+    max-width: 1250px;
+    margin: auto;
+    align-items: center; }
+  .beneficios {
+    display: grid; }
   .clientes {
     flex-wrap: wrap;
     align-items: center; }
-  .beneficios {
-    display: grid; } }
+  .footer {
+    display: inline-block;
+    width: 100%; }
+  .redes {
+    display: block; }
+  .footer {
+    width: 100%; }
+  .div-servicio {
+    margin: auto; } }
 
 @media (min-width: 731px) {
-  .main-index .beneficios {
+  .ancho-maximo.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .grid-contacto {
+    display: block; }
+  .beneficios {
     display: grid;
-    align-items: center; } }
+    align-items: center; }
+  h1 {
+    text-decoration: underline #ad172b; }
+  .grid-contacto {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    justify-items: center; } }
 
 @media (max-width: 730px) {
-  .main-index .beneficios {
-    display: grid; } }
+  main section .beneficios {
+    display: grid;
+    margin: 0 10px; } }
 
 @media (max-width: 400px) {
-  .main-index .clientes {
+  main .clientes {
     margin: auto; }
-  .main-index .beneficios {
-    display: inline;
+  main section .beneficios {
+    display: inline-block;
     align-items: center; } }
 
 /* Tienda */
@@ -378,7 +403,7 @@ body {
 
 /* Strong */
 strong {
-  color: #AD172B; }
+  color: #ad172b; }
 
 /* Footer */
 footer {
@@ -386,7 +411,7 @@ footer {
   footer img {
     height: 50px; }
   footer p {
-    background-color: #AD172B;
+    background-color: #ad172b;
     color: white;
     text-align: center;
     margin: auto; }
@@ -401,6 +426,7 @@ footer {
 @media (max-width: 1200px) {
   .footer {
     display: inline-block;
+    width: 100%;
     width: 100%; }
     .footer .redes {
       display: block; } }
