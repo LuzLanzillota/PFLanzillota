@@ -239,6 +239,10 @@ footer {
   .main-tienda {
     margin-top: -100px; } }
 
+@media (max-width: 400px) {
+  .main-tienda {
+    margin-top: -100px; } }
+
 /* Servicios */
 main .imagen-fondo img {
   height: 450px;
