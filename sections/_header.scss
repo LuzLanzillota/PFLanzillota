@@ -1,0 +1,104 @@
+//Navegador
+.ancho-maximo {
+    max-width: auto;
+    margin: auto;
+
+    .header {
+
+        nav {
+            background-color: #AD172B;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 0 20px;
+            height: 90px;
+            flex-wrap: wrap;
+            align-items: center;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    font-family: Cabin, Arial, Helvetica, sans-serif;
+                    list-style: none;
+                    padding: 10px;
+                    margin: 0 10px 0 0;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: large;
+
+                        &:hover {
+                            text-decoration: 2px solid underline white;
+
+                        }
+                    }
+                }
+            }
+
+            img {
+                height: 100px;
+            }
+
+            .button-hamburgesa {
+                button {
+                    color: white;
+                }
+            }
+        }
+
+        .navbar-toggler {
+            border: none !important;
+            background-color: white !important;
+            box-shadow: none !important;
+        }
+
+        #navbarSupportedContent {
+            background-color: #AD172B;
+            text-align: center;
+            color: white;
+
+        }
+    }
+
+}
+
+//Responsive
+
+@media (max-width: 1200px) {
+    .ancho-maximo {
+        .header {
+            max-width: 1250px;
+            margin: auto;
+            align-items: center;
+        }
+    }
+}
+
+@media (min-width: 731px) {
+    .ancho-maximo {
+        .header {
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 400px) {
+    .ancho-maximo {
+        .header {
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}

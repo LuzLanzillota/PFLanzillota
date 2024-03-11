@@ -1,0 +1,55 @@
+/* Tienda */
+.main-tienda {
+    section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        article {
+            margin: 5px;
+            padding: 0.6rem;
+
+            .pie {
+                background-color: #D1C4B7;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+
+    button {
+        background-color: #AD172B;
+        color: white;
+        width: 600px;
+        height: 40px;
+        margin: 50px;
+        border: none;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+//Responsive
+
+@media (max-width: 730px) {
+    .main-tienda {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-tienda {
+        margin-top: -100px;
+    }
+}

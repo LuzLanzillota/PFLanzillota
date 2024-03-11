@@ -1,41 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.navbar-toggler {
-    border: none !important;
-    background-color: white !important;
-    box-shadow: none !important;
-}
-
-#navbarSupportedContent {
-    background-color: #AD172B;
-    text-align: center;
-    color: white;
-
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    font-family: "Montserrat";
-}
-
-h1 {
+  font-family: "Montserrat"; }
+  body h1 {
     text-align: center;
     text-decoration: overline #AD172B;
-    padding: 20px;
-}
+    padding: 20px; }
 
-/* Navegador */
+@media (min-width: 731px) {
+  h1 {
+    text-decoration: underline #AD172B; } }
+
+@media (max-width: 730px) {
+  h1 {
+    text-decoration: underline #AD172B; } }
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: medium;
+    margin: auto; } }
+
 .ancho-maximo {
-    max-width: auto;
-    margin: auto;
-}
-
-nav {
+  max-width: auto;
+  margin: auto; }
+  .ancho-maximo .header nav {
     background-color: #AD172B;
     display: flex;
     justify-content: space-between;
@@ -43,307 +35,286 @@ nav {
     padding: 0 20px;
     height: 90px;
     flex-wrap: wrap;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    font-family: Cabin, Arial, Helvetica, sans-serif;
-    list-style: none;
-    padding: 10px;
-    margin: 0 10px 0 0;
-
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: large;
-}
-
-nav ul li a:hover {
-    text-decoration: 2px solid underline white;
-
-}
-
-nav img {
-    height: 100px;
-}
-
-.button-hamburgesa button {
-    color: white;
-}
-
-/* Home */
-.imagen-fondo {
-    height: 500px;
-    overflow: hidden;
-    width: 100%;
-}
-
-.imagen-fondo img {
-    width: 100%;
-}
-
-.slider1 {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". . ."
-        ". slider .";
-}
-
-.slider {
-    grid-area: slider;
-}
-
-.carrusel {
-    width: 100%;
-}
-
-
-.clientes2 h2 {
-    margin: 40px;
+    align-items: center; }
+    .ancho-maximo .header nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap; }
+      .ancho-maximo .header nav ul li {
+        font-family: Cabin, Arial, Helvetica, sans-serif;
+        list-style: none;
+        padding: 10px;
+        margin: 0 10px 0 0; }
+        .ancho-maximo .header nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: large; }
+          .ancho-maximo .header nav ul li a:hover {
+            text-decoration: 2px solid underline white; }
+    .ancho-maximo .header nav img {
+      height: 100px; }
+    .ancho-maximo .header nav .button-hamburgesa button {
+      color: white; }
+  .ancho-maximo .header .navbar-toggler {
+    border: none !important;
+    background-color: white !important;
+    box-shadow: none !important; }
+  .ancho-maximo .header #navbarSupportedContent {
+    background-color: #AD172B;
     text-align: center;
-    text-decoration: overline #AD172B;
-}
+    color: white; }
 
-.clientes {
+@media (max-width: 1200px) {
+  .ancho-maximo .header {
+    max-width: 1250px;
+    margin: auto;
+    align-items: center; } }
+
+@media (min-width: 731px) {
+  .ancho-maximo .header nav {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px;
-    margin-left: 10px;
+    align-items: center;
+    justify-content: space-between; } }
 
-}
+@media (max-width: 400px) {
+  .ancho-maximo .header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; } }
 
-.clientes article {
-    margin: 10px;
-}
+.imagen-fondo {
+  height: 500px;
+  overflow: hidden;
+  width: 100%; }
+  .imagen-fondo img {
+    width: 100%; }
 
-.beneficios {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
-    grid-template-rows: 1fr 0.2fr 1fr;
-    gap: 0px 0px;
-    justify-items: center;
-    grid-auto-flow: row;
-    grid-template-areas:
-        ". ben1 . ben2 ."
-        ". . . . ."
-        ". ben3 . ben4 .";
-}
+.main-index .slider1 {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . ." ". slider ."; }
+  .main-index .slider1 .slider {
+    grid-area: slider; }
 
-.beneficios img {
+.main-index .carrusel {
+  width: 100%; }
+
+.main-index .clientes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  margin-left: 10px; }
+  .main-index .clientes article {
+    margin: 10px; }
+
+.main-index .clientes2 h2 {
+  margin: 40px;
+  text-align: center;
+  text-decoration: overline #AD172B; }
+
+.main-index .galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .main-index .galeria img {
+    margin: 5px; }
+
+.main-index .beneficios {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr 0.2fr 1fr;
+  gap: 0px 0px;
+  justify-items: center;
+  grid-auto-flow: row;
+  grid-template-areas: ". ben1 . ben2 ." ". . . . ." ". ben3 . ben4 ."; }
+  .main-index .beneficios img {
     width: 60px;
-    margin: 15px;
-}
-
-.beneficios .ben1 img {
-    width: 60px;
-}
-
-.beneficios .ben3 img {
-    width: 60px;
-}
-
-.beneficios .ben4 img {
-    width: 60px;
-}
-
-.ben1 {
+    margin: 15px; }
+  .main-index .beneficios .ben1 {
     grid-area: ben1;
-    align-content: center;
-}
+    align-content: center; }
+    .main-index .beneficios .ben1 img {
+      width: 60px; }
+  .main-index .beneficios .ben2 {
+    grid-area: ben2; }
+  .main-index .beneficios .ben3 {
+    grid-area: ben3; }
+    .main-index .beneficios .ben3 img {
+      width: 60px; }
+  .main-index .beneficios .ben4 {
+    grid-area: ben4; }
+    .main-index .beneficios .ben4 img {
+      width: 60px; }
 
-.ben2 {
-    grid-area: ben2;
-}
-
-.ben3 {
-    grid-area: ben3;
-}
-
-.ben4 {
-    grid-area: ben4;
-}
-
-.galeria {
-    display: flex;
-    flex-direction: row;
+@media (max-width: 1200px) {
+  .clientes {
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center
-}
+    align-items: center; }
+  .beneficios {
+    display: grid; } }
 
-.galeria img {
-    margin: 5px;
-}
+@media (min-width: 731px) {
+  .main-index .beneficios {
+    display: grid;
+    align-items: center; } }
 
+@media (max-width: 730px) {
+  .main-index .beneficios {
+    display: grid; } }
+
+@media (max-width: 400px) {
+  .main-index .clientes {
+    margin: auto; }
+  .main-index .beneficios {
+    display: inline;
+    align-items: center; } }
 
 /* Tienda */
-.tienda section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-.tienda section article {
+.main-tienda section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .main-tienda section article {
     margin: 5px;
-    padding: 0.6rem;
-
-}
-
-.tienda section img {
-    width: 100%;
-}
-
-.pie {
-    background-color: #D1C4B7;
-}
+    padding: 0.6rem; }
+    .main-tienda section article .pie {
+      background-color: #D1C4B7; }
+  .main-tienda section img {
+    width: 100%; }
 
 .boton {
-    display: flex;
-    justify-content: center;
-
-}
-
-.boton button {
+  display: flex;
+  justify-content: center; }
+  .boton button {
     background-color: #AD172B;
     color: white;
     width: 600px;
     height: 40px;
     margin: 50px;
-    border: none;
-}
+    border: none; }
+    .boton button a {
+      text-decoration: none;
+      color: white; }
 
-.boton button a {
-    text-decoration: none;
+@media (max-width: 730px) {
+  .main-tienda {
+    margin-top: -100px; } }
+
+@media (max-width: 400px) {
+  .main-tienda {
+    margin-top: -100px; } }
+
+/* Servicios */
+.main-servicio .div-servicio {
+  display: grid;
+  margin: 10px auto;
+  grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  margin: 0 10px;
+  grid-template-areas: ". article-servicio-1 . article-servicio-2 . article-servicio-3 ."; }
+  .main-servicio .div-servicio .article-servicio-1 {
+    grid-area: article-servicio-1;
+    background-image: url(../recursos/box.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    height: 450px; }
+  .main-servicio .div-servicio .article-servicio-2 {
+    grid-area: article-servicio-2;
+    background-image: url(../recursos/catering.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    margin-bottom: 10px; }
+  .main-servicio .div-servicio .article-servicio-3 {
+    grid-area: article-servicio-3;
+    background-image: url(https://ayulem.com.ar/wp-content/uploads/2023/12/Ayulem_Destacado_MenuEjecutivo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    margin-bottom: 10px; }
+  .main-servicio .div-servicio article {
+    height: 450px;
+    display: flex;
+    justify-content: center; }
+  .main-servicio .div-servicio p {
     color: white;
-}
-
-/* Footer */
-footer {
-    background-color: #373737;
-}
-
-footer img {
-    height: 50px;
-}
-
-footer p {
-    background-color: #AD172B;
-    color: white;
+    font-size: 2rem;
     text-align: center;
     margin: auto;
-}
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18); }
 
-.redes {
-    display: inline-flex;
-    float: inline-end;
-    margin-right: 20px;
-}
+.imagen-fondo-servicio img {
+  overflow: hidden;
+  width: 100%;
+  height: 500px; }
 
-.redes img {
-    height: 30px;
-    margin: 10px;
-}
+@media (max-width: 1200px) {
+  .main-servicio .div-servicio {
+    margin: auto; } }
 
-/* Strong */
-strong {
-    color: #AD172B;
-}
+@media (max-width: 730px) {
+  .main-servicio .div-servicio {
+    display: block;
+    margin: auto; } }
+
+@media (max-width: 400px) {
+  .main-servicio .div-servicio {
+    display: inline;
+    margin: auto; } }
 
 .nosotros section p {
-    margin: 30px;
-}
+  margin: 30px; }
 
-/* Mapa */
-.mapa {
-    display: flex;
-    justify-content: center;
-}
+.main-contacto .mapa {
+  display: flex;
+  justify-content: center; }
 
-/* Contacto */
+.main-contacto .tit-locales {
+  text-align: center;
+  text-decoration: overline #AD172B;
+  margin-top: 20px; }
 
-
-.tit-locales {
-    text-align: center;
-    text-decoration: overline #AD172B;
-    margin-top: 20px;
-}
-
-.locales {
-    display: flex;
-    justify-content: center;
-}
-
-.locales article {
-
+.main-contacto .locales {
+  display: flex;
+  justify-content: center; }
+  .main-contacto .locales article {
     margin: 10px;
-    padding: 5px;
-}
-
-.locales .localesc img {
+    padding: 5px; }
+  .main-contacto .locales .localesc img {
     width: 100%;
-    overflow: hidden;
-}
+    overflow: hidden; }
 
-.grid-contacto {
-    display: grid;
-    align-items: start;
-    justify-content: center;
-    grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
-    grid-template-rows: 0fr 1fr 1fr 0fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". . . . ."
-        ". card1 . card2 ."
-        ". card3 . card4 ."
-        ". . . . .";
-}
+.main-contacto .grid-contacto {
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
+  grid-template-rows: 0fr 1fr 1fr 0fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . . . ." ". card1 . card2 ." ". card3 . card4 ." ". . . . ."; }
+  .main-contacto .grid-contacto .card1 {
+    grid-area: card1; }
+  .main-contacto .grid-contacto .card2 {
+    grid-area: card2; }
+  .main-contacto .grid-contacto .card3 {
+    grid-area: card3; }
+  .main-contacto .grid-contacto .card4 {
+    grid-area: card4; }
 
-.card1 {
-    grid-area: card1;
-}
-
-.card2 {
-    grid-area: card2;
-}
-
-.card3 {
-    grid-area: card3;
-}
-
-.card4 {
-    grid-area: card4;
-}
-
-.boton1 {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-}
-
-.boton1 button a {
-    text-decoration: none;
-    color: #373737;
-}
-
-.boton1 button:hover {
-    border: 2px solid #D1C4B7;
-    background-color: white;
-}
-
-.boton1 button {
+.main-contacto .boton1 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px; }
+  .main-contacto .boton1 button {
     background-color: #D1C4B7;
     color: #373737;
     width: 200px;
@@ -351,246 +322,89 @@ strong {
     margin: auto;
     margin-bottom: 10px;
     border: none;
-}
+    margin-top: 20px; }
+    .main-contacto .boton1 button:hover {
+      border: 2px solid #D1C4B7;
+      background-color: white; }
+    .main-contacto .boton1 button a {
+      text-decoration: none;
+      color: #373737; }
 
-.formulario {
-    display: flex;
-    justify-content: center;
-
-}
-
-.formulario form {
+.main-contacto .formulario {
+  display: flex;
+  justify-content: center; }
+  .main-contacto .formulario form {
     width: 800px;
     box-shadow: #373737 3px;
     border-radius: 5px;
     margin: 10px;
-    padding: 10px;
-}
-
-.formulario form #exampleInputMessage1 {
-    height: 200px;
-}
-
-.formulario form .botonc {
-    background-color: #AD172B;
-    width: 70px;
-    color: white;
-}
-
-.formulario form .botonc button {
-    color: white;
-}
-
-/* Servicios */
-
-.div-servicio {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    margin: 0 10px;
-    grid-template-areas:
-        ". article-servicio-1 . article-servicio-2 . article-servicio-3 .";
-}
-
-.article-servicio-1 {
-    grid-area: article-servicio-1;
-    background-image: url(../recursos/box.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10px;
-
-}
-
-.article-servicio-2 {
-    grid-area: article-servicio-2;
-    background-image: url(../recursos/catering.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    margin-bottom: 10px;
-}
-
-.article-servicio-3 {
-    grid-area: article-servicio-3;
-    background-image: url(https://ayulem.com.ar/wp-content/uploads/2023/12/Ayulem_Destacado_MenuEjecutivo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    margin-bottom: 10px;
-}
-
-.div-servicio article {
-    height: 450px;
-    display: flex;
-    justify-content: center;
-}
-
-.div-servicio p {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18);
-}
-
-.imagen-fondo-servicio img {
-    overflow: hidden;
-    width: 100%;
-    height: 500px;
-
-}
-
-/* Responsive */
-
-@media (max-width: 1200px) {
-    .ancho-maximo.header {
-        max-width: 1250px;
-        margin: auto;
-        align-items: center;
-    }
-
-    .beneficios {
-        display: grid;
-    }
-
-    .clientes {
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .footer {
-        display: inline-block;
-        width: 100%;
-    }
-
-    .redes {
-        display: block;
-    }
-
-    .footer {
-        width: 100%;
-    }
-
-    .div-servicio {
-        margin: auto;
-    }
-}
-
+    padding: 10px; }
+    .main-contacto .formulario form #exampleInputMessage1 {
+      height: 200px; }
+    .main-contacto .formulario form .botonc {
+      background-color: #AD172B;
+      width: 70px;
+      color: white; }
+      .main-contacto .formulario form .botonc button {
+        color: white; }
 
 @media (min-width: 731px) {
-    .ancho-maximo.header nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .grid-contacto {
-        display: block;
-    }
-
-    .beneficios {
-        display: grid;
-        align-items: center;
-    }
-
-    h1 {
-        text-decoration: underline #AD172B;
-    }
-
-    .grid-contacto {
-        display: grid;
-        margin: auto;
-        width: 100%;
-        justify-items: center;
-    }
-
-}
-
-
+  .main-contacto .grid-contacto {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    justify-items: center; } }
 
 @media (max-width: 730px) {
-    .beneficios {
-        display: grid;
-    }
-
-    h1 {
-        text-decoration: underline #AD172B;
-    }
-
-    .grid-contacto {
-        display: grid;
-        margin: auto;
-        justify-items: center;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 550px);
-        grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "card4";
-    }
-
-    .div-servicio {
-        display: block;
-        margin: auto;
-    }
-
-    .tienda {
-        margin-top: -100px;
-    }
-}
-
-
+  .main-contacto .grid-contacto {
+    display: grid;
+    margin: 20px auto;
+    margin-bottom: -20px;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 550px);
+    grid-template-areas: "card1" "card2" "card3" "card4"; } }
 
 @media (max-width: 400px) {
-    .header nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .main-contacto .grid-contacto {
+    display: grid;
+    margin: 20px auto;
+    margin-top: 20px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 550px);
+    grid-template-areas: "card1" "card2" "card3" "card4"; } }
 
-    h1 {
-        font-size: medium;
-        margin: auto;
-    }
+/* Strong */
+strong {
+  color: #AD172B; }
 
-    footer {
-        width: 100%;
-    }
+/* Footer */
+footer {
+  background-color: #373737; }
+  footer img {
+    height: 50px; }
+  footer p {
+    background-color: #AD172B;
+    color: white;
+    text-align: center;
+    margin: auto; }
+  footer .redes {
+    display: inline-flex;
+    float: inline-end;
+    margin-right: 20px; }
+    footer .redes img {
+      height: 30px;
+      margin: 10px; }
 
-    .div-servicio {
-        display: block;
-        margin: auto;
-    }
+@media (max-width: 1200px) {
+  .footer {
+    display: inline-block;
+    width: 100%; }
+    .footer .redes {
+      display: block; } }
 
-    .clientes {
-        margin: auto;
-    }
-
-    .beneficios {
-        display: inline;
-        align-items: center;
-    }
-
-    .grid-contacto {
-        display: grid;
-        margin: 20px auto;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 550px);
-        grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "card4";
-    }
-
-    .tienda {
-        margin-top: -100px;
-    }
-}
+@media (max-width: 400px) {
+  footer {
+    width: 100%; } }

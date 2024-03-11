@@ -1,0 +1,157 @@
+//Home
+.imagen-fondo {
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.main-index {
+
+    .slider1 {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . ."
+            ". slider .";
+
+        .slider {
+            grid-area: slider;
+        }
+    }
+
+    .carrusel {
+        width: 100%;
+    }
+
+    .clientes {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+        margin-left: 10px;
+
+        article {
+            margin: 10px;
+        }
+    }
+
+    .clientes2 {
+        h2 {
+            margin: 40px;
+            text-align: center;
+            text-decoration: overline #AD172B;
+        }
+    }
+
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin: 5px;
+        }
+    }
+
+    .beneficios {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
+        grid-template-rows: 1fr 0.2fr 1fr;
+        gap: 0px 0px;
+        justify-items: center;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". ben1 . ben2 ."
+            ". . . . ."
+            ". ben3 . ben4 .";
+
+        img {
+            width: 60px;
+            margin: 15px;
+        }
+
+        .ben1 {
+            grid-area: ben1;
+            align-content: center;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        .ben2 {
+            grid-area: ben2;
+        }
+
+        .ben3 {
+            grid-area: ben3;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        .ben4 {
+            grid-area: ben4;
+
+            img {
+                width: 60px;
+            }
+
+        }
+
+    }
+}
+
+
+//Responsive
+@media (max-width: 1200px) {
+    .clientes {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .beneficios {
+        display: grid;
+    }
+}
+
+@media (min-width: 731px) {
+    .main-index {
+
+        .beneficios {
+            display: grid;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .main-index {
+
+        .beneficios {
+            display: grid;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .main-index {
+        .clientes {
+            margin: auto;
+        }
+
+        .beneficios {
+            display: inline;
+            align-items: center;
+        }
+    }
+}
