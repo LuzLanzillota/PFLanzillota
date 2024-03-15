@@ -126,7 +126,7 @@ footer {
 
 /*Home*/
 .imagen-fondo {
-  height: 400px;
+  height: 500px;
   overflow: hidden;
   width: 100%; }
   .imagen-fondo img {
@@ -212,11 +212,13 @@ footer {
     display: grid; } }
 
 @media (max-width: 400px) {
-  .main-index .clientes {
-    margin: auto; }
-  .main-index .beneficios {
-    display: inline;
-    align-items: center; } }
+  .main-index {
+    margin-top: -250px; }
+    .main-index .clientes {
+      margin: auto; }
+    .main-index .beneficios {
+      display: inline;
+      align-items: center; } }
 
 /*Nosotros*/
 .main-nosotros section {
@@ -278,7 +280,7 @@ footer {
 .imagen-fondo-servicio img {
   overflow: hidden;
   width: 100%;
-  height: 450px; }
+  height: 500px; }
 
 /*Responsive*/
 @media (max-width: 1200px) {

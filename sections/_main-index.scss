@@ -1,6 +1,6 @@
 /*Home*/
 .imagen-fondo {
-    height: 400px;
+    height: 500px;
     overflow: hidden;
     width: 100%;
 
@@ -145,6 +145,7 @@
 
 @media (max-width: 400px) {
     .main-index {
+        margin-top: -250px;
         .clientes {
             margin: auto;
         }
