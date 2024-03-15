@@ -128,7 +128,8 @@ footer {
   grid-template-columns: 0.2fr 1fr 0.2fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: ". . ." ". slider ."; }
+  grid-template-areas: ". . ."
+ ". slider ."; }
   .main-index .slider1 .slider {
     grid-area: slider; }
 
@@ -165,7 +166,9 @@ footer {
   gap: 0px 0px;
   justify-items: center;
   grid-auto-flow: row;
-  grid-template-areas: ". ben1 . ben2 ." ". . . . ." ". ben3 . ben4 ."; }
+  grid-template-areas: ". ben1 . ben2 ."
+ ". . . . ."
+ ". ben3 . ben4 ."; }
   .main-index .beneficios img {
     width: 60px;
     margin: 15px; }
@@ -290,6 +293,30 @@ main .div-servicio {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.3);
     transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18); }
+    
+
+
+@media (max-width: 1200px) {
+    .main-servicio .div-servicio{
+            margin: auto;
+        }
+    }
+
+@media (max-width: 730px) {
+    .main-servicio .div-servicio{
+            display: block;
+            margin: auto;
+        }
+    }
+
+
+@media (max-width: 400px) {
+    .main-servicio .div-servicio{
+
+            display: inline;
+            margin: auto;
+    }
+}
 
 .nosotros section {
   width: 80%;
@@ -323,7 +350,10 @@ main .div-servicio {
   grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
   grid-template-rows: 0fr 1fr 1fr 0fr;
   gap: 0px 0px;
-  grid-template-areas: ". . . . ." ". card1 . card2 ." ". card3 . card4 ." ". . . . ."; }
+  grid-template-areas: ". . . . ."
+ ". card1 . card2 ."
+ ". card3 . card4 ."
+ ". . . . ."; }
   .main-contacto .grid-contacto .card1 {
     grid-area: card1; }
   .main-contacto .grid-contacto .card2 {
@@ -387,7 +417,10 @@ main .div-servicio {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 550px);
-    grid-template-areas: "card1" "card2" "card3" "card4"; } }
+    grid-template-areas: "card1"
+ "card2"
+ "card3"
+ "card4"; } }
 
 @media (max-width: 400px) {
   .main-contacto .grid-contacto {
@@ -396,4 +429,7 @@ main .div-servicio {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 550px);
-    grid-template-areas: "card1" "card2" "card3" "card4"; } }
+    grid-template-areas: "card1"
+ "card2"
+ "card3"
+ "card4"; } }
