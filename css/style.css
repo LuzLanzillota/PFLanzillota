@@ -293,7 +293,7 @@ footer {
 
 @media (max-width: 400px) {
   .main-servicio {
-    margin-top: -250px; }
+    margin-top: -300px; }
     .main-servicio .div-servicio {
       display: block;
       margin: auto; } }
