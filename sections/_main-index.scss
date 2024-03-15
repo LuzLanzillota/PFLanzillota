@@ -1,6 +1,6 @@
-//Home
+/*Home*/
 .imagen-fondo {
-    height: 450px;
+    height: 400px;
     overflow: hidden;
     width: 100%;
 
@@ -112,7 +112,7 @@
 }
 
 
-//Responsive
+/*Responsive*/
 @media (max-width: 1200px) {
     .clientes {
         flex-wrap: wrap;

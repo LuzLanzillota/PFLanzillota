@@ -46,7 +46,7 @@
         }
 
         p {
-            color: white;
+            color: rgb(255, 255, 255);
             font-size: 2rem;
             text-align: center;
             margin: auto;
@@ -60,19 +60,18 @@
     img {
         overflow: hidden;
         width: 100%;
-        height: 500px;
+        height: 450px;
 
     }
 }
-
-
-//Responsive
+/*Responsive*/
 
 
 @media (max-width: 1200px) {
     .main-servicio {
 
         .div-servicio {
+            display: grid;
             margin: auto;
         }
     }
@@ -90,8 +89,9 @@
 
 @media (max-width: 400px) {
     .main-servicio {
+        margin-top: -230px;
         .div-servicio {
-            display: inline;
+            display: block;
             margin: auto;
         }
     }
