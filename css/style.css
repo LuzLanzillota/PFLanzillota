@@ -67,7 +67,7 @@ footer {
     justify-content: space-between;
     flex-direction: row;
     padding: 0 20px;
-    height: 90px;
+    height: 100px;
     flex-wrap: wrap;
     align-items: center; }
     .ancho-maximo .header nav ul {
@@ -117,7 +117,7 @@ footer {
     justify-content: space-between; } }
 
 .imagen-fondo {
-  height: 500px;
+  height: 450px;
   overflow: hidden;
   width: 100%; }
   .imagen-fondo img {
@@ -291,8 +291,11 @@ main .div-servicio {
     background-color: rgba(0, 0, 0, 0.3);
     transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18); }
 
-.nosotros section p {
-  margin: 30px; }
+.nosotros section {
+  width: 80%;
+  margin: 20px auto; }
+  .nosotros section p {
+    margin: 30px; }
 
 .main-contacto .mapa {
   display: flex;
@@ -390,7 +393,6 @@ main .div-servicio {
   .main-contacto .grid-contacto {
     display: grid;
     margin: 20px auto;
-    margin-top: 20px;
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 550px);
