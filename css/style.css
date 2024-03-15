@@ -228,8 +228,10 @@ footer {
     margin: 30px; }
 
 @media (max-width: 400px) {
-  .main-nosotros section {
-    width: 85%; } }
+  .main-nosotros {
+    margin-top: -300px; }
+    .main-nosotros section {
+      width: 85%; } }
 
 /* Servicios */
 .main-servicio .div-servicio {
