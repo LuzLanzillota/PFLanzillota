@@ -245,21 +245,24 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 10px;
-    height: 450px; }
+    height: 450px;
+    margin: 10px auto; }
   .main-servicio .div-servicio .article-servicio-2 {
     grid-area: article-servicio-2;
     background-image: url(../recursos/catering.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin: 10px auto; }
   .main-servicio .div-servicio .article-servicio-3 {
     grid-area: article-servicio-3;
     background-image: url(../recursos/Ayulem_Destacado_MenuEjecutivo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin: 10px auto; }
   .main-servicio .div-servicio article {
     height: 450px;
     display: flex;
@@ -290,7 +293,7 @@ footer {
 
 @media (max-width: 400px) {
   .main-servicio {
-    margin-top: -230px; }
+    margin-top: -250px; }
     .main-servicio .div-servicio {
       display: block;
       margin: auto; } }
@@ -329,7 +332,7 @@ footer {
 
 @media (max-width: 400px) {
   .main-tienda {
-    margin-top: -120px; } }
+    margin-top: -200px; } }
 
 /*Contacto*/
 .main-contacto {
