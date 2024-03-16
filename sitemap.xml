@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://luzlanzillota.github.io/PreEntrega3Lanzillota/index.html</loc>
+  <lastmod>2024-03-16T03:40:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://luzlanzillota.github.io/PreEntrega3Lanzillota/pages/nosotros.html</loc>
+  <lastmod>2024-03-16T03:39:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://luzlanzillota.github.io/PreEntrega3Lanzillota/pages/servicio.html</loc>
+  <lastmod>2024-03-16T03:39:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://luzlanzillota.github.io/PreEntrega3Lanzillota/pages/tienda.html</loc>
+  <lastmod>2024-03-16T03:40:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://luzlanzillota.github.io/PreEntrega3Lanzillota/pages/contacto.html</loc>
+  <lastmod>2024-03-16T03:40:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
