@@ -1,5 +1,5 @@
 /*Navegador*/
-.ancho-maximo {
+.div-barra-de-navegacion {
     max-width: auto;
     margin: auto;
 
@@ -40,7 +40,10 @@
             }
 
             img {
-                height: 100px;
+
+                object-fit: contain;
+                width: 100px;
+
             }
 
             .button-hamburgesa {

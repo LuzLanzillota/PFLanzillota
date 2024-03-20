@@ -1,5 +1,6 @@
 /* Footer */
 footer {
+    height: 50px;
     background-color: #373737;
 
     img {
@@ -11,16 +12,19 @@ footer {
         color: white;
         text-align: center;
         margin: auto;
+        
     }
 
     .redes {
         display: inline-flex;
         float: inline-end;
         margin-right: 20px;
+        
 
         img {
             height: 30px;
             margin: 10px;
+            
         }
     }
 }
