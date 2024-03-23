@@ -147,6 +147,9 @@
 }
 
 @media (max-width: 730px) {
+    .imagen-fondo{
+        margin-bottom: -50px;
+    }
     .main-index {
 
         .beneficios {
@@ -156,6 +159,9 @@
 }
 
 @media (max-width: 400px) {
+    .imagen-fondo{
+        margin-bottom: 100px;
+    }
     .main-index {
         margin-top: -250px;
 
