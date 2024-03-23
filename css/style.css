@@ -220,7 +220,7 @@ footer {
 
 @media (max-width: 730px) {
   .imagen-fondo {
-    margin-bottom: -50px; }
+    margin-bottom: -20px; }
   .main-index .beneficios {
     display: grid; } }
 
