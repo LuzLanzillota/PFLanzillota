@@ -139,7 +139,8 @@ footer {
   grid-template-columns: 0.2fr 1fr 0.2fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: ". . ." ". slider ."; }
+  grid-template-areas: ". . ."
+ ". slider ."; }
   .main-index .slider1 .slider {
     grid-area: slider; }
 
@@ -176,6 +177,8 @@ footer {
   justify-content: center;
   align-items: center; }
   .main-index .galeria img {
+    width: 150px;
+    height: 160px;
     margin: 5px; }
 
 .main-index .beneficios {
@@ -185,7 +188,9 @@ footer {
   gap: 0px 0px;
   justify-items: center;
   grid-auto-flow: row;
-  grid-template-areas: ". ben1 . ben2 ." ". . . . ." ". ben3 . ben4 ."; }
+  grid-template-areas: ". ben1 . ben2 ."
+ ". . . . ."
+ ". ben3 . ben4 ."; }
   .main-index .beneficios img {
     width: 60px;
     margin: 15px; }
@@ -377,7 +382,10 @@ footer {
     grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
     grid-template-rows: 0fr 1fr 1fr 0fr;
     gap: 0px 0px;
-    grid-template-areas: ". . . . ." ". card1 . card2 ." ". card3 . card4 ." ". . . . ."; }
+    grid-template-areas: ". . . . ."
+ ". card1 . card2 ."
+ ". card3 . card4 ."
+ ". . . . ."; }
     .main .grid-contacto .card1 {
       grid-area: card1; }
     .main .grid-contacto .card2 {
@@ -440,7 +448,10 @@ footer {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 550px);
-    grid-template-areas: "card1" "card2" "card3" "card4"; } }
+    grid-template-areas: "card1"
+ "card2"
+ "card3"
+ "card4"; } }
 
 @media (max-width: 400px) {
   .main .grid-contacto {
@@ -449,4 +460,7 @@ footer {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 550px);
-    grid-template-areas: "card1" "card2" "card3" "card4"; } }
+    grid-template-areas: "card1"
+ "card2"
+ "card3"
+ "card4"; } }
